@@ -18,7 +18,6 @@ import authenticate from './functions/authenticate';
 import {makeExecutableSchema} from '@graphql-tools/schema';
 import {applyMiddleware} from 'graphql-middleware';
 import {MyContext} from './types/MyContext';
-import {GraphQLError} from 'graphql';
 
 const app = express();
 
@@ -32,6 +31,7 @@ app.use(
 (async () => {
   try {
     // TODO Create a rate limit rule instance (not WSK2 course)
+    // const rateLimitRule = createRateLimitRule({
 
     // TODO Create a permissions object (not WSK2 course)
 
